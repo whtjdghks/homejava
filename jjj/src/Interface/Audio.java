@@ -1,27 +1,22 @@
 package Interface;
 
 public class Audio implements RemoteControl{
-	
+	//필드
 	private int volume;
-	private boolean mute;
 	
-	
-	
-	@Override
+	//turnOn()추상 메소드의 실체 메소드
 	public void turnOn() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Audio를 켭니다.");	
 	}
-
-	@Override
+	//turnOff()추상 메소드의 실체 메소드
 	public void turnoff() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Audo를 끕니다.");
 	}
-
-	@Override
+	//setVolume()추상 메소드의 실체 메소드
 	public void setVolume(int volume) {
-		// TODO Auto-generated method stub
+		if(volume>RemoteControl.MAX_VOLUME) {
+			this.volume=RemoteControl.MAX_VOLUME;
+		}
 		
 	}
 
