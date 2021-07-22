@@ -1,21 +1,22 @@
 package Interface;
 
 public class Television implements RemoteControl {
-	
+	//필드
 	private int volume;
 	
+	//turnOn()추상메소드의 실제 메소드
 	@Override
 	public void turnOn() {
 		System.out.println("TV를 켭니다.");
 		
 	}
-
+	//turnOff()추상메소드의 실제 메소드
 	@Override
 	public void turnoff() {
 		System.out.println("TV를 끕니다.");
 		
 	}
-
+	//setVolume()추상메소드의 실제 메소드
 	@Override
 	public void setVolume(int volume) {
 		if(volume<RemoteControl.MAX_VOLUME) {
