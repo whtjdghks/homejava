@@ -11,7 +11,7 @@ public class Main {
 		b.method1();
 		
 		A.C c = new A.C();
-		C.field1 =3;
+		c.field1 =3;
 		c.method1();
 		A.C.field2 =3;
 		A.C.method2();
