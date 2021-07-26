@@ -15,4 +15,4 @@ public class JoinExample {
 		System.out.println("1~100의 합 :"+ sumThread.getSum());
 	}
 
-}
+}//Exception
