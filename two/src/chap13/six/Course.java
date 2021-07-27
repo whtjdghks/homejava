@@ -14,7 +14,7 @@ public class Course<T> {
 	public T[] getStudents() {return students;}
 	
 	public void add(T t) {
-		for(int i=0; i<students.length; i++) {
+		for(int i=0; i<students.length; i++) {//length=  ~길이만큼
 			if(students[i]==null) {
 				students[i]=t;
 				break;

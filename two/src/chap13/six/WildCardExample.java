@@ -17,17 +17,17 @@ public class WildCardExample {
 		System.out.println(course.getName()+"수강생 :"+Arrays.toString(course.getStudents()));
 	}
 	public static void main(String[]args) {
-	Course<Person>personCourse = new Course<Person>("일반인과정",5);
-		personCourse.add(new Person("일반인"));
-		personCourse.add(new Worker("직장인"));
-		personCourse.add(new Students("학생"));
-		personCourse.add(new HighStudent("일반인"));
+		Course<Person>personCourse = new Course<Person>("일반인과정",5);//배열이 5개가 생긴다.
+			personCourse.add(new Person("일반인"));
+			personCourse.add(new Worker("직장인"));
+			personCourse.add(new Students("학생"));
+			personCourse.add(new HighStudent("일반인"));
 		
 	Course<Worker>workerCourse = new Course<Worker>("직장인과정",5);
-	workerCourse.add(new Worker("직장인"));
+	workerCourse.add(new Worker("직장인"));//1개
 	
 	Course<Students>student = new Course<student>("학생과정",5);
-	studentCourse.add(new student("학생"));
+	studentCourse.add(new student("학생"));//2개
 	
 	Course<HighStudent>highStudentCourse = new Course<HighStudent>("고등학생과정",5);
 	highStudentCourse.add(new HighStudent("고등학생"));
