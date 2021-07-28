@@ -18,6 +18,7 @@ public class QueueExample {
 		while (!messagesQueue.isEmpty()) {
 			Message message = MessageQueue.poll()
 		}
+ddd
 
 	}
 
