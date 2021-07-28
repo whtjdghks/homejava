@@ -13,6 +13,7 @@ public class ArraysAsListExample {
 		List<Integer>list2 =Arrays.asList(1,2,3);
 		for(int value : list2) {
 			System.out.println(value);
+			
 		}
 	}
 
