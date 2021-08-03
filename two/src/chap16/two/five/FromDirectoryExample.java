@@ -6,12 +6,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
+
 public class FromDirectoryExample {
 
 	public static void main(String[] args) throws IOException {
-		Path path = Paths.get("D:/datafile/num.txt");
-		Stream<Path>stream =Files.list(path);
-		stream.forEach(p -> System.out.println(p.getFileName()));
+		Path path = Paths.get("D:/datafile/");
+		Stream<Path> stream =Files.list(path);
+		stream.forEach(p -> System.out.println(p.getFileName()) );
 
 	}
 
