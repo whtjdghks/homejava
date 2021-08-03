@@ -2,7 +2,7 @@ package chap18.three;
 
 import java.io.IOException;
 import java.io.InputStream;
-
+// 하고 싶은 말과 이름을 작성
 public class SystemInExample2 {
 
 	public static void main(String[] args) throws IOException {
