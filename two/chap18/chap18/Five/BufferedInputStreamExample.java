@@ -18,6 +18,7 @@ public class BufferedInputStreamExample {
 		fis1.close();
 		
 		FileInputStream fis2 = new FileInputStream("C:/imgsource/justdo.mp3");
+		
 		BufferedInputStream bis = new BufferedInputStream(fis2);
 		start = System.currentTimeMillis();
 		while(bis.read()!=-1) {}
